@@ -1,5 +1,6 @@
 import styles from "../../styles/Order.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Order = () => {
   const status = 0;
@@ -105,6 +106,9 @@ const Order = () => {
           </div>
           <button disabled className={styles.button}>
             PAID
+          </button>
+          <button disabled className={styles.button}>
+            <Link href="/">GO TO MAINPAGE</Link>
           </button>
         </div>
       </div>
