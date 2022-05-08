@@ -1,6 +1,7 @@
 import styles from "../../styles/Product.module.css";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const Product = () => {
   const [size, setSize] = useState(0);
@@ -78,8 +79,10 @@ const Product = () => {
           </div>
         </div>
         <div className={styles.add}>
-            <input type="number" defaultValue={1} className={styles.quantity}/>
+          <input type="number" defaultValue={1} className={styles.quantity} />
+          <Link href="/cart">
             <button className={styles.button}>Add to Cart</button>
+          </Link>
         </div>
       </div>
     </div>
