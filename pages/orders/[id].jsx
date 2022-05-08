@@ -107,7 +107,7 @@ const Order = () => {
           <button disabled className={styles.button}>
             PAID
           </button>
-          <button disabled className={styles.button}>
+          <button disabled className={styles.buttonProgress}>
             <Link href="/">GO TO MAINPAGE</Link>
           </button>
         </div>

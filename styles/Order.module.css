@@ -41,6 +41,25 @@
     }
   }
   
+  .buttonProgress {
+    background-color: orange;
+    height: 30px;
+    color: teal;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    animation: inProgress .5s ease infinite alternate;
+  }
+  
+  @keyframes inProgress {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
   .undone {
     display: flex;
     flex-direction: column;
